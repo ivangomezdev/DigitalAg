@@ -17,6 +17,10 @@
 
 }
 
+
+
+
+
 .botkers__services-row {
   display: flex;
   flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
@@ -80,18 +84,4 @@
   animation-delay: 3s; /* Retrasa la animación 1 segundo */
 }
 
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 768px) {
-  .botkers__service-item {
-    flex: 0 0 50%; /* En pantallas pequeñas, 2 items por fila */
-    font-size: 16px;
-    padding: 15px;
-  }
-}
 
-@media (max-width: 480px) {
-  .botkers__service-item {
-    flex: 0 0 100%; /* En pantallas muy pequeñas, 1 item por fila */
-    margin: 5px 0;
-  }
-}
