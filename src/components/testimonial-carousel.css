@@ -43,6 +43,14 @@
     border: 2px solid #e5e5e5;
   }
 
+  @media(max-width:749px){
+    .testimonial{
+      background-color: #ffffffd8;
+      box-shadow: 2px  1px rgb(241, 181, 83);
+      border-radius: 5px;
+    }
+  }
+
   /* Modifier: expanded */
   .testimonial--expanded {
     transform: scale(1.05);
