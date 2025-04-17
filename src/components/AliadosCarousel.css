@@ -1,0 +1,114 @@
+.aliados {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .aliados__header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .aliados__divider {
+    width: 60px;
+    height: 3px;
+    background-color: #ff9800;
+    margin: 0 auto 20px;
+  }
+  
+  .aliados__title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333333;
+    text-shadow: 0px 1px 8px rgb(243, 183, 94);
+    margin: 0;
+  }
+  
+  .aliados__carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .aliados__logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    overflow: hidden;
+  }
+  
+  .aliados__logo-container {
+    flex: 0 0 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .aliados__logo {
+    max-width: 150px;
+    max-height: 100px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+  }
+  
+  .aliados__logo:hover {
+    filter: grayscale(0);
+    opacity: 1;
+  }
+  
+  .aliados__nav {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #ff9800;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    transition: all 0.2s ease;
+  }
+  
+  .aliados__nav:hover {
+    background-color: #ff9800;
+    color: white;
+  }
+  
+  .aliados__nav--prev {
+    margin-right: 10px;
+  }
+  
+  .aliados__nav--next {
+    margin-left: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .aliados__logo-container {
+      flex: 0 0 33.33%;
+    }
+  
+    .aliados__logos {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .aliados__logo-container {
+      flex: 0 0 100%;
+    }
+  
+    .aliados__logos {
+      width: 70%;
+    }
+  }
+  

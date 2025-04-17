@@ -1,0 +1,112 @@
+.hyperautomation {
+display: flex;
+
+margin-top: -350px;
+justify-content: center;
+    gap: 2rem;
+    padding: 3rem;
+    color: white;
+    min-height: 100vh;
+    align-items: center;
+  }
+
+
+  
+  .hyperautomation__indicator {
+    width: 12px;
+    height: 12px;
+    background-color: #ff6b00;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .hyperautomation__image-container--top .hyperautomation__indicator {
+    right: -6px;
+    top: 50%;
+  }
+  
+  .hyperautomation__image-container--bottom .hyperautomation__indicator {
+    left: -6px;
+    bottom: 50%;
+  }
+  
+  .hyperautomation__content {
+    background-color: #ff8b3da5;
+    box-shadow: 6px 6px 5px #000000;
+    border-radius: 5px;
+  
+    padding: 2rem;
+    display: flex;
+    width: 1000px;
+    margin: 50px auto;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  @media (max-width:1500px){
+    .hyperautomation {
+      display: flex;
+      flex-direction: column;
+  
+        }
+  }
+  .hyperautomation__text {
+    font-size: 1.1rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .hyperautomation {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+  
+    .hyperautomation__image-container--top {
+      grid-column: 1;
+      grid-row: 1;
+      justify-content: center;
+    }
+  
+    .hyperautomation__content {
+      grid-column: 1;
+      grid-row: 2;
+      padding: 1rem 0;
+    }
+  
+    .hyperautomation__image-container--bottom {
+      grid-column: 1;
+      grid-row: 3;
+      justify-content: center;
+    }
+  
+    .hyperautomation__image-wrapper {
+      max-width: 100%;
+    }
+  
+    .hyperautomation__image-container--top .hyperautomation__indicator {
+      right: 50%;
+      bottom: -6px;
+      top: auto;
+    }
+  
+    .hyperautomation__image-container--bottom .hyperautomation__indicator {
+      left: 50%;
+      top: -6px;
+      bottom: auto;
+    }
+  }
+  
+
+  @media(max-width:1100px){
+    .hyperautomation__content {
+     width: 80%;
+    }
+
+    .hyperautomation__text {
+      padding: 10px;
+     }
+  }
