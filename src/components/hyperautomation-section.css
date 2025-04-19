@@ -19,29 +19,89 @@ justify-content: center;
     border-radius: 50%;
     position: absolute;
   }
-  
-  .hyperautomation__image-container--top .hyperautomation__indicator {
-    right: -6px;
-    top: 50%;
-  }
-  
-  .hyperautomation__image-container--bottom .hyperautomation__indicator {
-    left: -6px;
-    bottom: 50%;
-  }
-  
+
   .hyperautomation__content {
-    background-color: #ff8b3da5;
+    display: flex;
     box-shadow: 6px 6px 5px #000000;
     border-radius: 5px;
-  
+    color: white;
     padding: 2rem;
-    display: flex;
-    width: 1000px;
+    flex-direction: row-reverse;
+    align-items: center;
     margin: 50px auto;
-    flex-direction: column;
-    gap: 2rem;
+    justify-content: center;
+    gap: 100px;
+    position: relative;
   }
+
+.hyperautomation__video{
+  max-width: 500px;
+}
+
+@media(max-width:382px){
+  .hyperautomation__text{
+font-size: 17px !important; 
+width: 200px !important;
+}
+}
+
+@media(max-width:859px){
+ 
+  .hyperautomation__content {
+    display: flex;
+    flex-direction: column;
+  }
+   
+  .hyperautomation__text {
+    margin: 0 auto;
+    margin-top: -120px !important;
+
+}
+
+@media(max-width:450px){
+  .hyperautomation__text li{
+
+    margin-left: 50px !important;
+  }
+}
+}
+.hyperautomation__text h2 {
+text-align: center;
+font-size: 30px;
+background: linear-gradient(to right,white,white,white,white,white,white,white,white,white,white,white,white,white,white, #00D4FF, #8AD5DE); /* Gradiente celeste eléctrico a celeste suave */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Hace el relleno transparente para mostrar el gradiente */
+  text-shadow: 0 0 5px rgba(0, 212, 255, 0.5); /* Sombra celeste para profundidad */
+  background-size: 200% 100%; /* Amplía el gradiente para el movimiento */
+  animation: slideGradient 6s linear infinite; /* Animación de 6 segundos */
+}
+
+.hyperautomation__text li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  text-shadow: 1px 1px 3px #AFDAEB;
+}
+
+
+
+/* Animación para mover el gradiente */
+@keyframes slideGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.hyperautomation__text span{
+  color: #AFDAEB;
+}
+  
   @media (max-width:1500px){
     .hyperautomation {
       display: flex;
@@ -53,10 +113,27 @@ justify-content: center;
     font-size: 1.1rem;
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    
+    left: 300px;
+    width: 500px !important;
     margin: 0;
   }
   
   /* Responsive adjustments */
+  @media(max-width:500px){
+    .hyperautomation__video{
+      max-width: 390px;
+    }
+    .hyperautomation__text h2{
+      font-size: 24px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .hyperautomation__text li{
+      font-size: 15px !important;
+     
+    }
+  }
   @media (max-width: 992px) {
     .hyperautomation {
       grid-template-columns: 1fr;
@@ -76,6 +153,7 @@ justify-content: center;
       grid-row: 2;
       padding: 1rem 0;
     }
+    
   
     .hyperautomation__image-container--bottom {
       grid-column: 1;

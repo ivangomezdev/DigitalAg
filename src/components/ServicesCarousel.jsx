@@ -10,14 +10,14 @@ import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
 import BuildIcon from '@mui/icons-material/Build';
 
 const services = [
-  { text: 'Inteligencia Artificial', icon: <AcUnitIcon sx={{color:"#4A90E2",border:"solid 2px #4A90E2",borderRadius:"50%",padding:"5px",boxShadow:"2px 2px #4a91e25e"}}/> },
-  { text: 'RPA', icon: <AccessAlarmsIcon sx={{color:"#4A90E2",border:"solid 2px #4A90E2",borderRadius:"50%",padding:"5px",boxShadow:"2px 2px #4a91e25e"}} /> },
-  { text: 'Bots conversacionales', icon: <AdbIcon sx={{color:"#4A90E2",border:"solid 2px #4A90E2",borderRadius:"50%",padding:"5px",boxShadow:"2px 2px #4a91e25e"}} /> },
-  { text: 'Discovery workshops', icon: <AccountBalanceIcon sx={{color:"#4A90E2",border:"solid 2px #4A90E2",borderRadius:"50%",padding:"5px",boxShadow:"2px 2px #4a91e25e"}} /> },
-  { text: 'Estructuración de Datos', icon: <AddCircleIcon sx={{color:"#4A90E2",border:"solid 2px #4A90E2",borderRadius:"50%",padding:"5px",boxShadow:"2px 2px #4a91e25e"}} /> },
-  { text: 'Optimización de Procesos', icon: <AnalyticsIcon sx={{color:"#4A90E2",border:"solid 2px #4A90E2",borderRadius:"50%",padding:"5px",boxShadow:"2px 2px #4a91e25e"}} /> },
-  { text: 'Automatización', icon: <AutoFixHighIcon sx={{color:"#4A90E2",border:"solid 2px #4A90E2",borderRadius:"50%",padding:"5px",boxShadow:"2px 2px #4a91e25e"}} /> },
-  { text: 'Análisis de Datos', icon: <BuildIcon sx={{color:"#4A90E2",border:"solid 2px #4A90E2",borderRadius:"50%",padding:"5px",boxShadow:"2px 2px #4a91e25e"}} /> },
+  { text: 'Inteligencia Artificial', icon: <AcUnitIcon sx={{color:"black",border:"solid 2px black",borderRadius:"50%",padding:"5px",boxShadow:"2px 2px #4a91e25e"}}/> },
+  { text: 'RPA', icon: <AccessAlarmsIcon sx={{color:"black",border:"solid 2px black",borderRadius:"50%",padding:"5px",boxShadow:"2px 2pxrgb(74, 145, 226)"}} /> },
+  { text: 'Bots conversacionales', icon: <AdbIcon sx={{color:"black",border:"solid 2px black",borderRadius:"50%",padding:"5px",boxShadow:"2px 2px #4a91e25e"}} /> },
+  { text: 'Discovery workshops', icon: <AccountBalanceIcon sx={{color:"black",border:"solid 2px black",borderRadius:"50%",padding:"5px",boxShadow:"2px 2px #4a91e25e"}} /> },
+  { text: 'Estructuración de Datos', icon: <AddCircleIcon sx={{color:"black",border:"solid 2px black",borderRadius:"50%",padding:"5px",boxShadow:"2px 2px #4a91e25e"}} /> },
+  { text: 'Optimización de Procesos', icon: <AnalyticsIcon sx={{color:"black",border:"solid 2px black",borderRadius:"50%",padding:"5px",boxShadow:"2px 2px #4a91e25e"}} /> },
+  { text: 'Automatización', icon: <AutoFixHighIcon sx={{color:"black",border:"solid 2px black",borderRadius:"50%",padding:"5px",boxShadow:"2px 2px #4a91e25e"}} /> },
+  { text: 'Análisis de Datos', icon: <BuildIcon sx={{color:"black",border:"solid 2px black",borderRadius:"50%",padding:"5px",boxShadow:"2px 2px #4a91e25e"}} /> },
 ];
 
 const ServicesCarousel = () => {

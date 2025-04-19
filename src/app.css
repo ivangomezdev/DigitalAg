@@ -9,7 +9,7 @@ body{
     width: 550px;
     height: 550px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(166, 127, 10, 0.7) 0%, rgba(100, 100, 255, 0) 80%);
+    background: radial-gradient(circle, rgba(251, 225, 255, 0.7) 0%, rgba(100, 100, 255, 0) 80%);
     filter: blur(30px); /* Difumina la bolita */
     pointer-events: none; /* Asegura que no interfiera con los clicks */
     z-index: 1; /* Coloca la bolita detrás del contenido */
@@ -20,37 +20,63 @@ body{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-color: #1F1F1F;
+    background-color: black;
     overflow: hidden;
     backdrop-filter: blur(5px);
 }
 
-
-
-.wave-container {
-    position: absolute;
-    bottom: 0;
+ /* Contenedor de partículas */
+ .particles {
+    position: fixed;
+    top: 0;
     left: 0;
     width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    border: none;
-}
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
 
-.wave-container svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 70px; /* Altura de las ondas */
-    border-bottom: 16px solid rgb(255, 255, 255) !important;
-}
+  /* Estilo de cada partícula */
+  .particle {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8); /* Blanco con opacidad */
+    border-radius: 50%;
+    width: 3px;
+    height: 3px;
+    box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.4); /* Halo suave */
+    animation: moveParticle 10s linear infinite;
+  }
 
-.wave-container path {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 70px; /* Altura de las ondas */
-  
-}
+  /* Variaciones para partículas */
+  .particles .particle:nth-child(2n) {
+    animation-duration: 15s;
+  }
+  .particles .particle:nth-child(3n) {
+    animation-duration: 8s;
+    width: 2px;
+    height: 2px;
+    box-shadow: 0 0 6px 1px rgba(255, 255, 255, 0.3); /* Halo más pequeño */
+  }
+  .particles .particle:nth-child(4n) {
+    animation-duration: 12s;
+    opacity: 0.6;
+  }
+
+  /* Animación de movimiento */
+  @keyframes moveParticle {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 0.4;
+    }
+    100% {
+      transform: translate(100vw, 100vh);
+      opacity: 0;
+    }
+  }
+
+
 
 

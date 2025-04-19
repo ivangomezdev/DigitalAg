@@ -20,7 +20,7 @@ const Hiperautomatizacion: React.FC = () => {
         >
           <path
             d="M20 5L10 10M20 5L30 10M20 5V15M10 10V20L20 25M10 10L20 15M30 10V20L20 25M30 10L20 15M20 15V25"
-            stroke="#FF8A3D"
+            stroke="black"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -42,7 +42,7 @@ const Hiperautomatizacion: React.FC = () => {
         >
           <path
             d="M10 10H15V15H10V10ZM25 10H30V15H25V10ZM10 25H15V30H10V25ZM25 25H30V30H25V25ZM17.5 17.5H22.5V22.5H17.5V17.5ZM10 17.5H15V22.5H10V17.5ZM25 17.5H30V22.5H25V17.5ZM17.5 10H22.5V15H17.5V10ZM17.5 25H22.5V30H17.5V25Z"
-            stroke="#FF8A3D"
+            stroke="black"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -62,10 +62,10 @@ const Hiperautomatizacion: React.FC = () => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle cx="20" cy="20" r="10" stroke="#FF8A3D" strokeWidth="2" />
+          <circle cx="20" cy="20" r="10" stroke="black" strokeWidth="2" />
           <path
             d="M20 10V20L25 25"
-            stroke="#FF8A3D"
+            stroke="black"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -91,18 +91,18 @@ const Hiperautomatizacion: React.FC = () => {
             width="20"
             height="20"
             rx="2"
-            stroke="#FF8A3D"
+            stroke="black"
             strokeWidth="2"
           />
           <path
             d="M15 20H25"
-            stroke="#FF8A3D"
+            stroke="black"
             strokeWidth="2"
             strokeLinecap="round"
           />
           <path
             d="M20 15V25"
-            stroke="#FF8A3D"
+            stroke="black"
             strokeWidth="2"
             strokeLinecap="round"
           />
@@ -123,18 +123,18 @@ const Hiperautomatizacion: React.FC = () => {
         >
           <path
             d="M20 10C15 10 10 15 10 20C10 25 15 30 20 30C25 30 30 25 30 20C30 15 25 10 20 10Z"
-            stroke="#FF8A3D"
+            stroke="black"
             strokeWidth="2"
           />
           <path
             d="M15 17.5C15 16.12 16.12 15 17.5 15C18.88 15 20 16.12 20 17.5C20 18.88 18.88 20 17.5 20"
-            stroke="#FF8A3D"
+            stroke="black"
             strokeWidth="2"
             strokeLinecap="round"
           />
           <path
             d="M22.5 25C22.5 23.62 23.62 22.5 25 22.5C26.38 22.5 27.5 23.62 27.5 25C27.5 26.38 26.38 27.5 25 27.5"
-            stroke="#FF8A3D"
+            stroke="black"
             strokeWidth="2"
             strokeLinecap="round"
           />
@@ -156,21 +156,21 @@ const Hiperautomatizacion: React.FC = () => {
         >
           <path
             d="M15 15L10 20L15 25"
-            stroke="#FF8A3D"
+            stroke="black"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M25 15L30 20L25 25"
-            stroke="#FF8A3D"
+            stroke="black"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M20 10L20 30"
-            stroke="#FF8A3D"
+            stroke="black"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -204,22 +204,24 @@ const Hiperautomatizacion: React.FC = () => {
       <div className="hiperautomatizacion__container">
         <div className="hiperautomatizacion__header">
           <div className="hiperautomatizacion__title-decoration"></div>
-          <h1 className="hiperautomatizacion__title">
-            Tu empresa mejora con nosotros
-            <br />
-            <span>
-           ¡Hazla crecer!
-           </span>
-          </h1>
+          <div className="hiperautomatizacion__content" style={{ display: "flex", alignItems: "center", gap: "70px" }}>
+            <img
+              className="hiperautomatizacion__bot"
+              src="https://res.cloudinary.com/dc5zbh38m/image/upload/v1745011753/bot-removebg-preview_ehnfle.png"
+              alt=""
+            />
+            <div
+              style={{ display: "flex", flexDirection: "column",position:"relative" }}
+              className="hiperautomatizacion__textCotnent"
+            >
+              <h1 className="hiperautomatizacion__title">
+                Optimiza y crece con nosotros
+                <br />
+                <span>¡Transforma ya!</span>
+              </h1>
+            </div>
+          </div>
         </div>
-
-        <p className="hiperautomatizacion__description">
-          Somos la agencia digital que simplifica tu día a día: desde marketing
-          digital y gestión de campañas hasta implementación de bots y
-          optimización de flujos de trabajo. Nuestras soluciones personalizadas
-          eliminan tareas repetitivas, maximizan recursos y aceleran resultados.
-          Tu transformación digital comienza aquí.
-        </p>
 
         <h2 className="hiperautomatizacion__subtitle">Tecnologías Avanzadas</h2>
 

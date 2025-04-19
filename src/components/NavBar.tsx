@@ -10,14 +10,11 @@ const NavBar = () => {
   return (
     <header className="botkers__header">
       <div className="botkers__logo">
-        <img
-          src={"https://res.cloudinary.com/dc5zbh38m/image/upload/v1744845640/LICERIA-removebg-preview_fkex8z.png"}
-          alt={"logo"}
-        />
+
       </div>
 
       <button className="botkers__hamburger" onClick={toggleMenu}>
-        {isMenuOpen ? "✕" : "☰"}
+        {isMenuOpen ? "✕" : ""}
       </button>
 
       <nav className={`botkers__nav ${isMenuOpen ? "botkers__nav--open" : ""}`}>

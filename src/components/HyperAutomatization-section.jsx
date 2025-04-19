@@ -5,19 +5,37 @@ import Cube from "./Cube";
 export default function HyperautomationSection() {
   return (
     <section className="hyperautomation__content">
+      <video
+        className="hyperautomation__video"
+        loop
+        muted
+        src="https://res.cloudinary.com/dc5zbh38m/video/upload/v1745083978/brain_online-video-cutter.com_kp2bfu.mp4"
+        autoplay
+      />
 
-
-        <p className="hyperautomation__text">
-        Desde
-        automatización de procesos operativos hasta estrategias de marketing
-          Desarrollamos webs de alto impacto
-        
-          implementamos CRMs que transforman la relación con tus clientes y
-          creamos sistemas automatizados que optimizan tu productividad. Esta
-          versatilidad nos permite entender rápidamente tu negocio y ofrecer
-          exactamente lo que necesitas para destacar en tu mercado.
-        </p>
-    
+      <div className="hyperautomation__text">
+        <h2>Transformamos tu empresa con soluciones innovadoras</h2>
+        <ul>
+          <li>
+            <span className="material-symbols-outlined">check</span>{" "}
+            Automatizamos procesos
+          </li>
+          <li>
+            <span className="material-symbols-outlined">check</span> Creamos
+            Bots
+          </li>
+          <li>
+            <span className="material-symbols-outlined">check</span> IA
+          </li>
+          <li>
+            <span className="material-symbols-outlined">check</span> Desarrollo
+            WEB
+          </li>
+          <li>
+            <span className="material-symbols-outlined">check</span> Marketing
+          </li>
+        </ul>
+      </div>
     </section>
   );
 }

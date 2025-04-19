@@ -13,7 +13,8 @@
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^7.0.2",
     "@mui/material": "^7.0.2",
-    "preact": "^10.26.4"
+    "preact": "^10.26.4",
+    "uvcanvas": "^0.3.0"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.10.1",

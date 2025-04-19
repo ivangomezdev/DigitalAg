@@ -43,25 +43,35 @@ export function App() {
     <>
        <BotkersHeader />
        <main>
+        
     <section className="hiperCont">
-    <div className="blur-ball" ref={ballRef}></div>
+    <div class="particles">
+  
+    <div class="particle" style="top: 10%; left: 5%;"></div>
+    <div class="particle" style="top: 20%; left: 15%;"></div>
+    <div class="particle" style="top: 30%; left: 25%;"></div>
+    <div class="particle" style="top: 40%; left: 35%;"></div>
+    <div class="particle" style="top: 50%; left: 45%;"></div>
+    <div class="particle" style="top: 60%; left: 55%;"></div>
+    <div class="particle" style="top: 70%; left: 65%;"></div>
+    <div class="particle" style="top: 80%; left: 75%;"></div>
+    <div class="particle" style="top: 90%; left: 85%;"></div>
+   
+  </div>
       <Hiperautomatizacion/>
       <HyperautomationSection/>
       <TestimonialCarousel/>
-      <div class="wave-container">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" style="width: 100%; height: 100%;">
-            <path  fill="#ffffff" fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,106.7C384,117,480,171,576,176C672,181,768,139,864,128C960,117,1056,139,1152,138.7C1248,139,1344,117,1392,106.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
-    </div>
+    
     </section>
 
-    <section>
+    <section style={{display:"none",backgroundColor:"black"}}>
       <ClientesCarousel/>
       <AliadosCarousel/>
-    </section>
+    </section >
         
        </main>
-       <Footer/>
+       <div style={{display:"none",backgroundColor:"black"}}><Footer/></div>
+
     </>
   )
 }
